@@ -1,6 +1,6 @@
 {
   "name": "@nathangasc/observer",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A module which is help to do observer design pattern",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,6 +9,13 @@
   },
   "author": "Nathan GASC",
   "license": "ISC",
+  "keywords": [
+    "design pattern",
+    "observer",
+    "event",
+    "events",
+    "typescript"
+  ],
   "dependencies": {
     "browserify": "^17.0.0",
     "ts-node": "^10.7.0",
