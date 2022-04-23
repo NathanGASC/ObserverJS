@@ -1,6 +1,6 @@
 {
   "name": "@nathangasc/observer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A module which is help to do observer design pattern",
   "main": "./dist/index.js",
   "scripts": {
