@@ -4,15 +4,17 @@ exports.Observer = void 0;
 var Observer = /** @class */ (function () {
     function Observer() {
     }
-    Observer.prototype.onNotify = function (event, data) {
-        event = event.charAt(0).toUpperCase() + event.substring(1, event.length);
-        if (this["on" + event]) {
-            this["on" + event](data);
-        }
-        else {
-            if (Observer.log)
-                console.info("[OBSERVER] " + this.constructor.name + ": " + event, "event with data", data, "isn't handled but is triggered. If you want to handle this event, create a method", "on" + event);
-        }
+    Observer.prototype.subscribe = function (observable) {
+        observable.listeners.push(this);
+    };
+    Observer.prototype.unsubscribe = function (observable) {
+        var _this = this;
+        var listeners = observable.listeners.filter(function (value) {
+            if (value == _this)
+                return false;
+            return true;
+        });
+        observable.listeners = listeners;
     };
     Observer.log = false;
     return Observer;

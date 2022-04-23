@@ -1,11 +1,11 @@
 {
   "name": "@nathangasc/observer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A module which is help to do observer design pattern",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "ts-node ./src/index.ts",
-    "build": "tsc && browserify ./dist/index.js -o ./dist/index.js && uglifyjs --compress --mangle  -o ./dist/index.js -- ./dist/index.js"
+    "start": "ts-node ./example/index.ts",
+    "build": "tsc"
   },
   "author": "Nathan GASC",
   "license": "ISC",
