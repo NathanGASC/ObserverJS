@@ -1,1 +1,0 @@
-{"version":3,"file":"observable.d.ts","sourceRoot":"","sources":["../src/observable.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,YAAY,CAAC;AAEtC,qBAAa,UAAU;IACZ,SAAS,EAAE,QAAQ,EAAE,CAAM;IAElC,MAAM,CAAC,KAAK,EAAE,MAAM,EAAE,IAAI,GAAE,GAAQ;CAMvC"}
