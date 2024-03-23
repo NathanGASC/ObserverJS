@@ -1,3 +1,4 @@
 import { Observer } from './observer';
 import { Observable } from './observable';
-export { Observable, Observer }
+import { MutableState } from './mutableState';
+export { Observable, Observer, MutableState }
