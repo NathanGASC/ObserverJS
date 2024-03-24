@@ -40,7 +40,6 @@ export class MutableState<T> extends Mixin(LimitedObservable, LimitedObserver) {
     }
 
     public set value(v : T) {
-        if(this.data === v) return;
         this.data = v;
         this.notify("Update", this.data);
     }
