@@ -39,3 +39,27 @@ state.value = state.copy((state)=>{
     state.search = "How to implement Observer design pattern?";
     return state;
 })
+
+// ------------------------------------------------------------------------------------------------
+// Example 3 testing the binding of the observer to the observable
+
+class SpeakerObserver extends Observer {
+    sayHello() {
+        console.log("Hello");
+    }
+
+    onThinkHello() {
+        this.sayHello();
+    }
+}
+
+class BrainObservable extends Observable {
+    thinkHello() {
+        this.notify("ThinkHello");
+    }
+}
+
+const brain = new BrainObservable();
+const speaker = new SpeakerObserver();
+speaker.subscribe(brain);
+brain.thinkHello();

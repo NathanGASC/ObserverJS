@@ -17,7 +17,7 @@ export class LimitedObservable {
 
     protected notify(event: string, data: any = {}) {
         this.listeners.forEach((listener) => {
-            const func = (listener as any)[this.parseEventName(event)]
+            const func = (listener as any)[this.parseEventName(event)].bind(listener);
             if (func) func(data);
         })
     }
